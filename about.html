@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/tailwind.css" />
+    <script
+      defer
+      src="https://unpkg.com/@alpinejs/intersect@3.x.x/dist/cdn.min.js"
+    ></script>
+    <script
+      defer
+      src="https://unpkg.com/alpinejs@3.2.3/dist/cdn.min.js"
+    ></script>
+    <title>About Us</title>
+  </head>
+  <body class="bg-white" x-data>
+    <div class="w-full bg-gray-100 py-1 px-2">
+      <div class="main-container flex justify-center space-x-5 md:justify-end">
+        <a
+          href="#"
+          class="px-4 py-2 font-semibold text-gray-700 hover:text-black"
+          >News</a
+        >
+        <a
+          href="#"
+          class="px-4 py-2 font-semibold text-gray-700 hover:text-black"
+          >Book an Appointment</a
+        >
+        <a
+          href="#"
+          class="px-4 py-2 font-semibold text-gray-700 hover:text-black"
+          >Login</a
+        >
+      </div>
+    </div>
+    <div class="main-container">
+      <header
+        class="flex flex-col md:h-[115px] md:flex-row md:items-center md:justify-between"
+      >
+        <div>
+          <a href="index.html">
+            <img src="img/asiukpo-logo.png" width="128" height="78" alt="" />
+          </a>
+        </div>
+        <div class="mt-4 flex space-x-2 md:mt-0 md:space-x-0">
+          <div class="flex">
+            <p class="rounded-full bg-primary px-3 py-3">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="white"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                />
+              </svg>
+            </p>
+            <p class="mx-1 flex flex-col md:mx-3">
+              <span>Call Us</span>
+              <span
+                ><a href="tel:09091234520" class="font-semibold"
+                  >09091234520</a
+                ></span
+              >
+            </p>
+          </div>
+          <div class="flex">
+            <p class="rounded-full bg-primary px-3 py-3">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="white"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                />
+              </svg>
+            </p>
+            <p class="mx-1 flex flex-col md:mx-3">
+              <span>Mail Us</span>
+              <span
+                ><a href="mailto:info@asiukpo.com" class="font-semibold"
+                  >info@asiukpo.com</a
+                ></span
+              >
+            </p>
+          </div>
+        </div>
+      </header>
+    </div>
+    <div
+      class="mt-5 flex w-full basis-1 justify-end bg-primary md:mt-0 md:h-[66px]"
+    >
+      <div
+        class="main-container hidden w-full md:block md:h-full"
+        id="mainMenus"
+      >
+        <div class="flex h-full md:items-center md:justify-center">
+          <nav
+            class="flex flex-col px-2 py-2 md:my-auto md:flex-row md:space-x-8"
+          >
+            <div class="group relative cursor-pointer py-2">
+              <a href="index.html" class="inactive-menu">Home</a>
+            </div>
+
+            <div class="group relative cursor-pointer py-2">
+              <a href="about.html" class="active-menu">About Us</a>
+              <div
+                class="invisible absolute z-50 flex w-auto flex-col bg-primary py-1 px-1 text-white group-hover:visible md:mt-2 md:w-48"
+                onClick=""
+              >
+                <a
+                  href="about.html#who"
+                  class="my-3 block py-1 px-4 text-gray-100 transition duration-700 hover:bg-white hover:text-primary md:my-0"
+                  >Who We Are</a
+                >
+
+                <a
+                  href="about.html#team"
+                  class="block py-1 px-4 text-gray-100 transition duration-700 hover:bg-white hover:text-primary md:my-0"
+                  >Our Team</a
+                >
+                <a
+                  href="about.html#founder"
+                  class="block py-1 px-4 text-gray-100 transition duration-700 hover:bg-white hover:text-primary md:my-0"
+                  >About the Founder</a
+                >
+              </div>
+            </div>
+            <div class="group relative cursor-pointer py-2">
+              <a href="health-plans.html" class="inactive-menu"
+                >Health Care Plans</a
+              >
+            </div>
+            <div class="group relative cursor-pointer py-2">
+              <a href="services.html" class="inactive-menu">Services</a>
+              <div
+                class="invisible absolute z-50 flex w-auto flex-col bg-primary py-1 px-1 text-white group-hover:visible md:mt-2 md:w-48"
+                onClick=""
+              >
+                <a
+                  href="services.html#operating"
+                  class="my-3 block py-1 px-4 text-gray-100 transition duration-700 hover:bg-white hover:text-primary md:my-0"
+                  >Operating Theatre</a
+                >
+
+                <a
+                  href="services.html#laboratory"
+                  class="block py-1 px-4 text-gray-100 transition duration-700 hover:bg-white hover:text-primary md:my-0"
+                >
+                  Laboratory
+                </a>
+                <a
+                  href="services.html#gopd"
+                  class="block py-1 px-4 text-gray-100 transition duration-700 hover:bg-white hover:text-primary md:my-0"
+                >
+                  GOPD/IPD</a
+                >
+                <a
+                  href="services.html#pharmacy"
+                  class="block py-1 px-4 text-gray-100 transition duration-700 hover:bg-white hover:text-primary md:my-0"
+                >
+                  Pharmacy</a
+                >
+                <a
+                  href="services.html#emergency"
+                  class="block py-1 px-4 text-gray-100 transition duration-700 hover:bg-white hover:text-primary md:my-0"
+                >
+                  Emergency Services</a
+                >
+                <a
+                  href="services.html#antenatal"
+                  class="block py-1 px-4 text-gray-100 transition duration-700 hover:bg-white hover:text-primary md:my-0"
+                >
+                  Antenatal</a
+                >
+                <a
+                  href="services.html#bloodbank"
+                  class="block py-1 px-4 text-gray-100 transition duration-700 hover:bg-white hover:text-primary md:my-0"
+                >
+                  Blood Bank
+                </a>
+                <a
+                  href="services.html#dialysis"
+                  class="block py-1 px-4 text-gray-100 transition duration-700 hover:bg-white hover:text-primary md:my-0"
+                >
+                  Dialysis
+                </a>
+              </div>
+            </div>
+            <div class="group relative cursor-pointer py-2">
+              <a href="contact.html" class="inactive-menu">Contact Us</a>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <div class="flex h-full items-start py-4 px-2 md:hidden">
+        <button
+          type="button"
+          class="text-gray-100"
+          aria-label="toggle menu"
+          id="menuButton"
+        >
+          <svg viewBox="0 0 24 24" class="h-6 w-6 fill-current">
+            <path
+              fill-rule="evenodd"
+              d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"
+            ></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div
+      class="w-full"
+      style="
+        background-image: url(img/bg-home-reversed.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        object-fit: cover;
+      "
+    >
+      <div
+        class=""
+        style="
+          background-image: url(img/bg-overlay-reversed.png);
+          background-repeat: no-repeat;
+          background-size: 100% 100%;
+          object-fit: cover;
+        "
+      >
+        <div class="main-container bg-white py-6 md:bg-transparent" x-intersect="$el.classList.add('fadeUp')">
+          <div
+            class="mx-auto w-full py-4 md:w-1/2"
+            
+          >
+            <h1 class="px-2 py-2 text-center text-4xl font-bold text-gray-900">
+              About Us
+            </h1>
+            <p class="px-2 py-2 text-center text-gray-900">
+              ASI Ukpo Hospital started operations as ASI Ukpo Diagnostic and
+              Medical Centre (ADMC) in 2013, with the sole objective of making
+              medical services affordable and easily accessible to all. In 2016,
+              another diagnostic centre was established in Ogoja, northern Cross
+              River State. The diagnostic centre grew to a hospital in 2018 and
+              the name changed from the diagnostic and medical centre to the
+              current ASI Ukpo Hospitals.
+            </p>
+            <p class="px-2 py-2 text-gray-700">
+              In a continuous quest to meet health care demands in this clinic,
+              the ASI Ukpo Comprehensive Cancer Centre (AUCCC) was established
+              as the first privately owned cancer centre in the south-south
+              region of Nigeria.
+            </p>
+
+            <div class="mt-6 mb-5 flex w-full items-center justify-center">
+              <a href="#" class="button flex">Read More </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="main-container mt-10 flex flex-col space-y-5 md:flex-row md:space-y-0"
+    >
+      <div class="flex w-full flex-col md:flex-row">
+        <div
+          class="flex w-full flex-col items-center justify-center md:w-1/2"
+          x-intersect="$el.classList.add('fadeLeft')"
+        >
+          <h2 class="heading scroll-m-10 px-2" id="founder">
+            Meet the Founder
+          </h2>
+          <p
+            class="px-3 leading-10 md:px-10"
+            x-intersect="$el.classList.add('fade-in-right')"
+          >
+            ASI Ukpo Comprehensive Cancer Centre is the legacy project of late
+            Brig. Gen. Anthony S. I. Ukpo (Rtd.). A cancer survivor himself, and
+            having lost three siblings to cancer, he was determined to build an
+            oncology hospital of the highest standard for people in his home
+            State.
+          </p>
+          <p
+            class="px-3 leading-10 md:px-10"
+            x-intersect="$el.classList.add('fade-in-right')"
+          >
+            After an impressive military career, he retired and continued to
+            play an important role in society. Brig. Gen. Anthony Ukpo was an
+            industrialist with varied interests in hospitality, agriculture,
+            manufacturing, property development and healthcare. He was a
+            recipient of several awards and honours, including Honoris Causa
+            degrees from the University of Calabar, and Ambrose Alli University,
+            Ekpoma in Edo State.
+          </p>
+        </div>
+        <div
+          class="flex w-full items-center justify-center md:w-1/2"
+          x-intersect="$el.classList.add('fadeRight')"
+        >
+          <img src="img/Founder.JPG" class="w-full object-cover" alt="" />
+        </div>
+      </div>
+    </div>
+    <div class="main-container mt-10">
+      <div class="my-5">
+        <h2 class="heading scroll-m-10 text-center" id="team">Meet Our Team</h2>
+      </div>
+      <div
+        class="mt-4 grid grid-cols-1 gap-x-5 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
+      >
+        <div class="bg-secondary/20 cursor-pointer p-4" x-intersect="$el.classList.add('bounce-in-left')">
+          <div class="relative group">
+            <div class="flex items-center justify-center">
+              <img
+                src="img/yegwo.png"
+                alt=""
+                class="h-80 xl:h-96 w-full group-hover:scale-105 transition-all duration-500 object-cover"
+              />
+            </div>
+            <div
+              class="mt-2 flex absolute flex-col items-center justify-center bottom-0 bg-secondary text-white py-5 transition-all duration-500 group-hover:scale-110 group-hover:py-6 group-hover:-bottom-1 w-full"
+            >
+              <span class="text-lg font-bold">Mr. Yegwa Ukpo</span>
+              <span>Executive Director</span>
+            </div>
+          </div>
+        </div>
+        <div class="bg-secondary/20 cursor-pointer p-4" x-intersect="$el.classList.add('bounce-in-left')">
+          <div class="relative group">
+            <div class="flex items-center justify-center">
+              <img
+                src="img/chakrb.png"
+                alt=""
+                class="h-80 xl:h-96 w-full group-hover:scale-105 transition-all duration-500 object-cover"
+              />
+            </div>
+            <div
+              class="mt-2 flex absolute flex-col items-center justify-center bottom-0 bg-secondary text-white py-5 transition-all duration-500 group-hover:scale-110 group-hover:py-6 group-hover:-bottom-1 w-full"
+            >
+              <span class="text-lg font-bold">Mr Falguni Chakraborty</span>
+              <span>Chief Exactive officer</span>
+            </div>
+          </div>
+        </div>
+        <div class="bg-secondary/20 cursor-pointer p-4" x-intersect="$el.classList.add('bounce-in-right')">
+          <div class="relative group">
+            <div class="flex items-center justify-center">
+              <img
+                src="img/female1.png"
+                alt=""
+                class="h-80 xl:h-96 w-full group-hover:scale-105 transition-all duration-500 object-cover"
+              />
+            </div>
+            <div
+              class="mt-2 flex absolute flex-col items-center justify-center bottom-0 bg-secondary text-white py-5 transition-all duration-500 group-hover:scale-110 group-hover:py-6 group-hover:-bottom-1 w-full"
+            >
+              <span class="text-lg font-bold"> Dr. Gbenga Kajogbola</span>
+              <span>Chief Medical Director</span>
+            </div>
+          </div>
+        </div>
+        <div class="bg-secondary/20 cursor-pointer p-4" x-intersect="$el.classList.add('bounce-in-right')">
+          <div class="relative group">
+            <div class="flex items-center justify-center">
+              <img
+                src="img/female2.png"
+                alt=""
+                class="h-80 xl:h-96 w-full group-hover:scale-105 transition-all duration-500 object-cover"
+              />
+            </div>
+            <div
+              class="mt-2 flex absolute flex-col items-center justify-center bottom-0 bg-secondary text-white py-5 transition-all duration-500 group-hover:scale-110 group-hover:py-6 group-hover:-bottom-1 w-full"
+            >
+              <span class="text-lg font-bold">Mrs. Rosemary Achonwa</span>
+              <span>Chief Operating Officer</span>
+            </div>
+          </div>
+        </div>
+        <div class="bg-secondary/20 cursor-pointer p-4" x-intersect="$el.classList.add('bounce-in-right')">
+          <div class="relative group">
+            <div class="flex items-center justify-center">
+              <img
+                src="img/abioala.png"
+                alt=""
+                class="h-80 xl:h-96 w-full group-hover:scale-105 transition-all duration-500 object-cover"
+              />
+            </div>
+            <div
+              class="mt-2 flex absolute flex-col items-center justify-center bottom-0 bg-secondary text-white py-5 transition-all duration-500 group-hover:scale-110 group-hover:py-6 group-hover:-bottom-1 w-full"
+            >
+              <span class="text-lg font-bold">Dr. Abiola Adewale</span>
+              <span class="text-center">Lead Clinical and Radiation Oncologist</span>
+            </div>
+          </div>
+        </div>
+        <div class="bg-secondary/20 cursor-pointer p-4" x-intersect="$el.classList.add('bounce-in-right')">
+          <div class="relative group">
+            <div class="flex items-center justify-center">
+              <img
+                src="img/Obinna.png"
+                alt=""
+                class="h-80 xl:h-96 w-full group-hover:scale-105 transition-all duration-500 object-cover"
+              />
+            </div>
+            <div
+              class="mt-2 flex absolute flex-col items-center justify-center bottom-0 bg-secondary text-white py-5 transition-all duration-500 group-hover:scale-110 group-hover:py-6 group-hover:-bottom-1 w-full"
+            >
+              <span class="text-lg font-bold">Mr. Obinna Asogwa </span>
+              <span>Medical Physicistad </span>
+            </div>
+          </div>
+        </div>
+        <div class="bg-secondary/20 cursor-pointer p-4" x-intersect="$el.classList.add('bounce-in-left')">
+          <div class="relative group">
+            <div class="flex items-center justify-center">
+              <img
+                src="img/danial.png"
+                alt=""
+                class="h-80 xl:h-96 w-full group-hover:scale-105 transition-all duration-500 object-cover"
+              />
+            </div>
+            <div
+              class="mt-2 flex absolute flex-col items-center justify-center bottom-0 bg-secondary text-white py-5 transition-all duration-500 group-hover:scale-110 group-hover:py-6 group-hover:-bottom-1 w-full"
+            >
+              <span class="text-lg font-bold">Mr. Daniel Odah </span>
+              <span>Lead Radiotherapist</span>
+            </div>
+          </div>
+        </div>
+        <div class="bg-secondary/20 cursor-pointer p-4" x-intersect="$el.classList.add('bounce-in-left')">
+          <div class="relative group">
+            <div class="flex items-center justify-center">
+              <img
+                src="img/Matron Ojo.png"
+                alt=""
+                class="h-80 xl:h-96 w-full group-hover:scale-105 transition-all duration-500 object-cover"
+              />
+            </div>
+            <div
+              class="mt-2 flex absolute flex-col items-center justify-center bottom-0 bg-secondary text-white py-5 transition-all duration-500 group-hover:scale-110 group-hover:py-6 group-hover:-bottom-1 w-full"
+            >
+              <span class="text-lg font-bold">Mrs. Feyisola Ojo </span>
+              <span>Oncology Matron</span>
+            </div>
+          </div>
+        </div>
+      
+        <div class="bg-secondary/20 cursor-pointer p-4" x-intersect="$el.classList.add('bounce-in-left')">
+          <div class="relative group">
+            <div class="flex items-center justify-center">
+              <img
+                src="img/peace.jpg"
+                alt=""
+                class="h-80 xl:h-96 w-full group-hover:scale-105 transition-all duration-500 object-cover"
+              />
+            </div>
+            <div
+              class="mt-2 flex absolute flex-col items-center justify-center bottom-0 bg-secondary text-white py-5 transition-all duration-500 group-hover:scale-110 group-hover:py-6 group-hover:-bottom-1 w-full"
+            >
+              <span class="text-lg font-bold">	Mrs. Peace </span>
+              <span>Finance Manager</span>
+            </div>
+          </div>
+        </div>
+        <div class="bg-secondary/20 cursor-pointer p-4" x-intersect="$el.classList.add('bounce-in-right')">
+          <div class="relative group">
+            <div class="flex items-center justify-center">
+              <img
+                src="img/mike.jpg"
+                alt=""
+                class="h-80 xl:h-96 w-full group-hover:scale-105 transition-all duration-500 object-cover"
+              />
+            </div>
+            <div
+              class="mt-2 flex absolute flex-col items-center justify-center bottom-0 bg-secondary text-white py-5 transition-all duration-500 group-hover:scale-110 group-hover:py-6 group-hover:-bottom-1 w-full"
+            >
+              <span class="text-lg font-bold">Mr. Michael Etim </span>
+              <span>Head Laboratory</span>
+            </div>
+          </div>
+        </div>
+        <div class="bg-secondary/20 cursor-pointer p-4" x-intersect="$el.classList.add('bounce-in-right')">
+          <div class="relative group">
+            <div class="flex items-center justify-center">
+              <img
+                src="img/mfon.png"
+                alt=""
+                class="h-80 xl:h-96 w-full group-hover:scale-105 transition-all duration-500 object-cover"
+              />
+            </div>
+            <div
+              class="mt-2 flex absolute flex-col items-center justify-center bottom-0 bg-secondary text-white py-5 transition-all duration-500 group-hover:scale-110 group-hover:py-6 group-hover:-bottom-1 w-full"
+            >
+              <span class="text-lg font-bold">Ms. Mfon Inyang </span>
+              <span>Marketing Manager</span>
+            </div>
+          </div>
+        </div>
+         <div class="bg-secondary/20 cursor-pointer p-4" x-intersect="$el.classList.add('bounce-in-right')">
+          <div class="relative group">
+            <div class="flex items-center justify-center">
+              <img
+                src="img/dr-placeholder.jpg"
+                alt=""
+                class="h-80 xl:h-96 w-full group-hover:scale-105 transition-all duration-500 object-cover"
+              />
+            </div>
+            <div
+              class="mt-2 flex absolute flex-col items-center justify-center bottom-0 bg-secondary text-white py-5 transition-all duration-500 group-hover:scale-110 group-hover:py-6 group-hover:-bottom-1 w-full"
+            >
+              <span class="text-lg font-bold">Prof. Roland Ndoma </span>
+              <span>ASI Ukpo Tumour Board</span>
+            </div>
+          </div>
+        </div>
+
+        
+       
+         
+         
+        </div>
+      </div>
+    </div>
+    <div
+      class="bg-full mt-10 flex items-center py-10"
+      style="background-image: url('img/bg-dr.png')"
+    >
+      <div class="main-container"  x-intersect="$el.classList.add('fadeRight')">
+        <h1 class="px-4 heading scroll-m-10 text-white" id="who">Who We Are</h1>
+        <div class="mt-5 px-4 grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-8">
+          <div>
+            <div class="flex items-center space-x-2">
+              <span>
+                <svg
+                  width="27"
+                  height="18"
+                  viewBox="0 0 27 18"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <line
+                    x1="3.53553"
+                    y1="7.62952"
+                    x2="9.61506"
+                    y2="13.709"
+                    stroke="white"
+                    stroke-width="5"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M23.7008 2.99993L10.4177 14.0399"
+                    stroke="white"
+                    stroke-width="5"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </span>
+              <span class="text-xl text-white"> Competence </span>
+            </div>
+            <p class="text-white">
+              Our mission is to provide the highest quality cancer care through
+              prevention, research and excellent patient care.
+            </p>
+          </div>
+          <div>
+            <div class="flex items-center space-x-2">
+              <span>
+                <svg
+                  width="27"
+                  height="18"
+                  viewBox="0 0 27 18"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <line
+                    x1="3.53553"
+                    y1="7.62952"
+                    x2="9.61506"
+                    y2="13.709"
+                    stroke="white"
+                    stroke-width="5"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M23.7008 2.99993L10.4177 14.0399"
+                    stroke="white"
+                    stroke-width="5"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </span>
+              <span class="text-xl text-white"> Compassion </span>
+            </div>
+            <p class="text-white">
+              We understand the effect of cancer to the overall psychology of
+              our patients, and pledge empathy, respect and kindness to all our
+              patients and caregivers
+            </p>
+          </div>
+          <div>
+            <div class="flex items-center space-x-2">
+              <span>
+                <svg
+                  width="27"
+                  height="18"
+                  viewBox="0 0 27 18"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <line
+                    x1="3.53553"
+                    y1="7.62952"
+                    x2="9.61506"
+                    y2="13.709"
+                    stroke="white"
+                    stroke-width="5"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M23.7008 2.99993L10.4177 14.0399"
+                    stroke="white"
+                    stroke-width="5"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </span>
+              <span class="text-xl text-white"> Care </span>
+            </div>
+            <p class="text-white">
+              Our crop of specialists with proven excellence in healthcare
+              delivery, ensuring a high standard of care for each patient.
+            </p>
+          </div>
+          <div>
+            <div class="flex items-center space-x-2">
+              <span>
+                <svg
+                  width="27"
+                  height="18"
+                  viewBox="0 0 27 18"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <line
+                    x1="3.53553"
+                    y1="7.62952"
+                    x2="9.61506"
+                    y2="13.709"
+                    stroke="white"
+                    stroke-width="5"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M23.7008 2.99993L10.4177 14.0399"
+                    stroke="white"
+                    stroke-width="5"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </span>
+              <span class="text-xl text-white"> Commitment </span>
+            </div>
+            <p class="text-white">
+              Our commitment is rooted in our accountability and confidentiality
+              for each patient. Our cancer treatment services include:
+              radiotherapy, brachytherapy, chemotherapy, palliative care, super
+              specialty surgical procedures.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mt-10 bg-white">
+      <footer class="body-font main-container bg-white text-gray-600">
+        <div
+          class="container mx-auto flex flex-col flex-wrap py-12 md:flex-row md:flex-nowrap md:items-center lg:items-start"
+        >
+          <div
+            class="mx-auto w-64 flex-shrink-0 text-center md:mx-0 md:text-left"
+          >
+            <a
+              class="title-font flex items-center justify-center font-medium text-gray-900 md:justify-start"
+            >
+              <img src="img/asiukpo-logo.png" class="w-28" alt="" />
+            </a>
+            <p class="mt-2 px-2 text-sm text-gray-500">
+              We will assist you in finding a qualified doctor and also we
+              provide a platform to consult with your favorite doctor.
+            </p>
+            <div
+              class="mt-2 flex w-full items-center justify-center space-x-4 md:justify-start"
+            >
+              <span>
+                <svg
+                  width="30"
+                  height="30"
+                  viewBox="0 0 30 30"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M14.9999 10.0531C12.2761 10.0531 10.0533 12.2759 10.0533 14.9997C10.0533 17.7236 12.2761 19.9464 14.9999 19.9464C17.7238 19.9464 19.9466 17.7236 19.9466 14.9997C19.9466 12.2759 17.7238 10.0531 14.9999 10.0531ZM29.8363 14.9997C29.8363 12.9513 29.8548 10.9214 29.7398 8.87669C29.6247 6.50169 29.0829 4.39388 27.3462 2.65716C25.6058 0.916728 23.5017 0.378643 21.1267 0.263604C19.0783 0.148565 17.0484 0.167119 15.0036 0.167119C12.9552 0.167119 10.9253 0.148565 8.8806 0.263604C6.5056 0.378643 4.39778 0.92044 2.66106 2.65716C0.920635 4.39759 0.382549 6.50169 0.26751 8.87669C0.152471 10.9251 0.171026 12.955 0.171026 14.9997C0.171026 17.0445 0.152471 19.0781 0.26751 21.1228C0.382549 23.4978 0.924346 25.6056 2.66106 27.3423C4.40149 29.0827 6.5056 29.6208 8.8806 29.7359C10.929 29.8509 12.9589 29.8324 15.0036 29.8324C17.0521 29.8324 19.082 29.8509 21.1267 29.7359C23.5017 29.6208 25.6095 29.079 27.3462 27.3423C29.0867 25.6019 29.6247 23.4978 29.7398 21.1228C29.8585 19.0781 29.8363 17.0482 29.8363 14.9997V14.9997ZM14.9999 22.6109C10.788 22.6109 7.3888 19.2117 7.3888 14.9997C7.3888 10.7878 10.788 7.3886 14.9999 7.3886C19.2118 7.3886 22.6111 10.7878 22.6111 14.9997C22.6111 19.2117 19.2118 22.6109 14.9999 22.6109ZM22.9228 8.85442C21.9394 8.85442 21.1452 8.06028 21.1452 7.07688C21.1452 6.09349 21.9394 5.29935 22.9228 5.29935C23.9062 5.29935 24.7003 6.09349 24.7003 7.07688C24.7006 7.3104 24.6548 7.54167 24.5656 7.75747C24.4764 7.97326 24.3455 8.16933 24.1803 8.33445C24.0152 8.49957 23.8192 8.63049 23.6034 8.71971C23.3876 8.80894 23.1563 8.85472 22.9228 8.85442V8.85442Z"
+                    fill="#00AFEF"
+                  />
+                </svg>
+              </span>
+              <span>
+                <svg
+                  width="38"
+                  height="38"
+                  viewBox="0 0 38 38"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M21.2123 33.2445V20.2675H25.5902L26.241 15.1866H21.2123V11.9503C21.2123 10.4841 21.6208 9.48029 23.725 9.48029H26.3914V4.95037C25.0941 4.81134 23.79 4.74421 22.4853 4.74929C18.6156 4.74929 15.9588 7.11162 15.9588 11.4484V15.1771H11.6094V20.258H15.9683V33.2445H21.2123Z"
+                    fill="#00AFEF"
+                  />
+                </svg>
+              </span>
+              <span>
+                <svg
+                  width="38"
+                  height="38"
+                  viewBox="0 0 38 38"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M34.4373 9.43693C33.3017 9.92677 32.066 10.2793 30.7932 10.4166C32.1147 9.63152 33.1043 8.39119 33.5764 6.92834C32.3363 7.66603 30.9778 8.18331 29.5611 8.45724C28.969 7.82425 28.2529 7.31999 27.4574 6.97586C26.6619 6.63174 25.804 6.45513 24.9373 6.45705C21.4305 6.45705 18.6102 9.29962 18.6102 12.7879C18.6102 13.2777 18.6695 13.7676 18.766 14.2389C13.515 13.9643 8.83183 11.4557 5.71836 7.61486C5.15105 8.58384 4.85376 9.68714 4.85742 10.81C4.85742 13.0069 5.97441 14.944 7.67773 16.0832C6.67394 16.0437 5.69365 15.7678 4.8166 15.2779V15.3559C4.8166 18.4322 6.99121 20.9817 9.88945 21.568C9.34527 21.7093 8.78547 21.7816 8.22324 21.7832C7.81133 21.7832 7.42168 21.7424 7.02832 21.6867C7.82988 24.1953 10.1641 26.0174 12.9436 26.0768C10.7689 27.7801 8.04512 28.782 5.0875 28.782C4.55684 28.782 4.06699 28.7635 3.55859 28.7041C6.36406 30.5039 9.69277 31.543 13.2775 31.543C24.915 31.543 31.283 21.902 31.283 13.5338C31.283 13.2592 31.283 12.9846 31.2644 12.71C32.4965 11.8082 33.5764 10.6912 34.4373 9.43693Z"
+                    fill="#00AFEF"
+                  />
+                </svg>
+              </span>
+            </div>
+          </div>
+          <div
+            class="-mb-10 mt-10 flex flex-grow flex-wrap text-center md:mt-0 md:pl-20 md:text-left"
+          >
+            <div class="w-full px-4 md:w-1/2 lg:w-1/4">
+              <h2 class="title-font mb-6 font-bold tracking-widest text-black">
+                About
+              </h2>
+              <nav class="mb-10 list-none">
+                <li class="my-3">
+                  <a href="about.html" class="text-gray-600 hover:text-gray-800"
+                    >About</a
+                  >
+                </li>
+                <li class="my-3">
+                  <a href="#" class="text-gray-600 hover:text-gray-800"
+                    >Features</a
+                  >
+                </li>
+                <li class="my-3">
+                  <a href="#" class="text-gray-600 hover:text-gray-800">New</a>
+                </li>
+                <li class="my-3">
+                  <a href="#" class="text-gray-600 hover:text-gray-800"
+                    >Career</a
+                  >
+                </li>
+              </nav>
+            </div>
+            <div class="w-full px-4 md:w-1/2 lg:w-1/4">
+              <h2 class="title-font mb-6 font-bold tracking-widest text-black">
+                Company
+              </h2>
+              <nav class="mb-10 list-none">
+                <li class="my-3">
+                  <a
+                    href="about.html#team"
+                    class="text-gray-600 hover:text-gray-800"
+                    >Our Team</a
+                  >
+                </li>
+                <li class="my-3">
+                  <a href="#" class="text-gray-600 hover:text-gray-800"
+                    >Partner with Us</a
+                  >
+                </li>
+                <li class="my-3">
+                  <a href="#" class="text-gray-600 hover:text-gray-800">FAQ</a>
+                </li>
+                <li class="my-3">
+                  <a href="#" class="text-gray-600 hover:text-gray-800">Blog</a>
+                </li>
+              </nav>
+            </div>
+            <div class="w-full px-4 md:w-1/2 lg:w-1/4">
+              <h2 class="title-font mb-6 font-bold tracking-widest text-black">
+                Support
+              </h2>
+              <nav class="mb-10 list-none">
+                <li class="my-3">
+                  <a href="#" class="text-gray-600 hover:text-gray-800"
+                    >Account</a
+                  >
+                </li>
+                <li class="my-3">
+                  <a href="#" class="text-gray-600 hover:text-gray-800"
+                    >Support Center</a
+                  >
+                </li>
+                <li class="my-3">
+                  <a href="#" class="text-gray-600 hover:text-gray-800"
+                    >Feedback</a
+                  >
+                </li>
+                <li class="my-3">
+                  <a
+                    href="contact.html"
+                    class="text-gray-600 hover:text-gray-800"
+                    >Contact Us</a
+                  >
+                </li>
+              </nav>
+            </div>
+            <div class="w-full px-4 md:w-1/2 lg:w-1/4">
+              <h2 class="title-font mb-6 font-bold tracking-widest text-black">
+                Get in Touch
+              </h2>
+              <nav class="mb-10 list-none">
+                <p>Question or Feedback? We'll love to hear from you.</p>
+                <div
+                  class="mt-3 flex w-full rounded-md border-2 border-gray-300 px-2 py-1"
+                >
+                  <input
+                    type="text"
+                    class="w-full border-none py-1 px-2 outline-none"
+                    placeholder="your email"
+                  />
+                  <button class="">
+                    <svg
+                      width="34"
+                      height="34"
+                      viewBox="0 0 34 34"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M22.4149 16.9756L14.2775 17.0188L12.5535 9.53686C12.3067 8.46473 13.4456 7.60016 14.4097 8.12798L28.5389 15.8562C29.4222 16.3391 29.4166 17.6108 28.5284 18.0932L14.374 25.781C13.4055 26.3065 12.276 25.444 12.5296 24.3729L14.2747 17.0174"
+                        stroke="#FF7B54"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+  <script src="javascript/responsive.js"></script>
+</html>

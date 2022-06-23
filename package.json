@@ -1,0 +1,24 @@
+{
+  "name": "asi-hospital",
+  "version": "1.0.0",
+  "description": "",
+  "main": "tailwind.config.js",
+  "dependencies": {
+    "tailwindcss": "^3.0.24"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "npx tailwindcss -i tailwind.css -o css/tailwind.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sanan4li/ASI-Hospital.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sanan4li/ASI-Hospital/issues"
+  },
+  "homepage": "https://github.com/Sanan4li/ASI-Hospital#readme"
+}
