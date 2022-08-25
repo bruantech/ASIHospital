@@ -35,6 +35,12 @@
 .active-slider {
   @apply flex  transition-all duration-1000;
 }
+.service-para {
+  overflow: hidden;
+  -webkit-line-clamp: 4;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
 .main-container {
   @apply mx-auto w-full px-2 md:w-10/12;
 }
