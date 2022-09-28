@@ -235,7 +235,7 @@
         object-fit: cover;
       "
     >
-      <div class="w-full bg-blue-600/30" style="">
+      <div class="w-full bg-gray-900/60">
         <div class="main-container bg-white py-6 md:bg-transparent">
           <div class="mx-auto w-full py-4 md:w-1/2">
             <h1
@@ -243,7 +243,7 @@
               x-intersect="$el.classList.add('fadeInUp')"
             >
               Welcome to
-              <span class="text-black"> ASI UKPO </span>
+              <span class="text-shadow text-black"> ASI UKPO </span>
               Hospitals
             </h1>
             <p
@@ -334,12 +334,12 @@
             <span> 8AM to 5PM</span>
           </p>
           <p class="flex justify-between space-x-5">
-            <span> Mon to Fri</span>
-            <span> 8AM to 5PM</span>
+            <span> Saturday</span>
+            <span> 9AM to 2PM</span>
           </p>
           <p class="flex justify-between space-x-5">
-            <span> Mon to Fri</span>
-            <span> 8AM to 5PM</span>
+            <span> Sunday</span>
+            <span> 10AM to 2PM</span>
           </p>
         </div>
       </div>
@@ -450,7 +450,7 @@
               <span class="pl-4 text-xl font-semibold"> Our Purpose </span>
             </div>
             <p class="mt-4 text-gray-700">
-              Our purpose is to cultivate spaces for care, repair and healing.
+              To cultivate spaces for care, repair and healing.
             </p>
           </div>
           <div class="w-full md:w-1/3">
@@ -477,8 +477,8 @@
               <span class="pl-4 text-xl font-semibold"> Our Mission </span>
             </div>
             <p class="mt-4 text-gray-700">
-              Our mission is to provide affordable, readily available and world
-              class diagnostic and clinical services.
+              To provide affordable, readily available and world class
+              diagnostic and clinical services.
             </p>
           </div>
         </div>
@@ -509,7 +509,7 @@
               <span class="pl-4 text-xl font-semibold"> Our Vision </span>
             </div>
             <p class="mt-4 text-gray-700">
-              Our vision is to get to the root cause of sickness.
+              To get to the root cause of sickness.
             </p>
           </div>
           <div class="w-full md:w-1/3">
@@ -536,8 +536,7 @@
               <span class="pl-4 text-xl font-semibold"> Core Values </span>
             </div>
             <p class="mt-4 text-gray-700">
-              ASI UKPO will fulfill her vision by adherence to the following
-              core values: Empathy, Professionalism, Integrity, Care.
+              Empathy, Professionalism, Integrity, Care.
             </p>
           </div>
         </div>
@@ -710,7 +709,7 @@
     </div>
 
     <div
-      class="main-container mx-auto mt-20 mb-20 flex flex-col items-center justify-center"
+      class="main-container relative mx-auto mt-20 mb-20 flex flex-col items-center justify-center"
     >
       <div>
         <h1 class="heading">Our Team</h1>
@@ -764,7 +763,7 @@
                   <span class="text-center text-lg font-bold"
                     >Falguni Chakraborty</span
                   >
-                  <span class="text-center">Chief Executive officer</span>
+                  <span class="text-center">Chief Executive Officerr</span>
                 </div>
               </div>
             </div>
@@ -1118,11 +1117,18 @@
         </div>
       </div>
 
-      <div class="mt-10 flex justify-center space-x-2">
+      <div class="mt-10 hidden justify-center space-x-2 md:flex">
         <span class="dot active-dot" onclick="currentSlide(1)"></span>
         <span class="dot" onclick="currentSlide(2)"></span>
         <span class="dot" onclick="currentSlide(3)"></span>
         <span class="dot" onclick="currentSlide(4)"></span>
+      </div>
+      <div class="hidden md:block">
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+      </div>
+      <div class="mt-10">
+        <a href="about.html#team" class="button md:hidden">View All Members</a>
       </div>
     </div>
 
@@ -1356,6 +1362,11 @@
         </div>
       </footer>
     </div>
+    <!-- <div class="absolute bg-gray-800/40 flex h-screen w-full">
+      <div>
+
+      </div>
+    </div> -->
   </body>
   <script src="javascript/responsive.js"></script>
   <script src="javascript/slider.js"></script>
