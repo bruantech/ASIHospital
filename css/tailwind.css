@@ -771,12 +771,12 @@ video {
   height: 390px;
 }
 
-.h-16 {
-  height: 4rem;
-}
-
 .h-screen {
   height: 100vh;
+}
+
+.h-16 {
+  height: 4rem;
 }
 
 .min-h-\[500px\] {
@@ -1065,13 +1065,13 @@ video {
   background-color: rgb(17 24 39 / 0.6);
 }
 
+.bg-gray-800\/40 {
+  background-color: rgb(31 41 55 / 0.4);
+}
+
 .bg-blue-200 {
   --tw-bg-opacity: 1;
   background-color: rgb(191 219 254 / var(--tw-bg-opacity));
-}
-
-.bg-gray-800\/40 {
-  background-color: rgb(31 41 55 / 0.4);
 }
 
 .fill-current {
